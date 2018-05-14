@@ -1,6 +1,8 @@
 # docker machine
 
-```sh
+example script
+
+```bash
 #! /bin/bash
 
 set -u # ensure a machine name has been properly given
@@ -18,4 +20,8 @@ docker-machine create \
     --digitalocean-region="fra1" \
     --digitalocean-size "2gb" \
     $1
+```
+
+```bash
+eval $(docker-machine env <machine-name>)
 ```
