@@ -8,8 +8,16 @@
 5. inspect docker image
 6. upload docker image
 
+# sample app
 
-# app1
+```javascript
+
+```javascript
+// curl https://localhost:8080/
+require("http").createServer((req, res) => res.end(`hello [${req.url}] (${new Date()})\n`)).listen(8080)
+```
+
+# sample app with https
 
 ```javascript
 // curl -k https://localhost:8443/
@@ -20,16 +28,4 @@ https.createServer({
     key: fs.readFileSync("/.../key.pem"), 
     cert: fs.readFileSync("/.../cert.pem") 
 }, handler).listen(8443)
-```
-
-# app2
-
-```javascript
-// curl https://localhost:8080/
-require("http").createServer((_, res) => res.end("hello world\n")).listen(8080)
-```
-
-```javascript
-// curl https://localhost:8080/
-require("http").createServer((req, res) => res.end(`hello [${req.url}] (${new Date()})\n`)).listen(8080)
 ```
