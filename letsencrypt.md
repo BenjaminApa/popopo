@@ -1,5 +1,18 @@
 # Let's encrytp
 
+
+1. create a new 'ssl' folder and cd into it
+2. create a dockerfile based on `certbot/certbot` if needed
+3. craft a command to get a certificate `--standalone`
+4. ask me to setup a dns entry so your machine is publicly available.
+5. get a certificate
+6. package https demo app in `package.md`, and run it so It's accessible on port 443
+
+----------
+
+Below are some examples from my projects
+
+
 ```dockerfile
 FROM certbot/certbot:v0.23.0
 RUN apk add --update curl bash docker
