@@ -1,10 +1,12 @@
 # TP
 
+slides: https://docs.google.com/presentation/d/1-h-b6U_SGU0TbVgiuNwSxn2h6edprQ7lJEdCBkXqC8c/edit?usp=sharing
+
 Let's build something !
 
-- 1. docker machine
-- 2. package
-- 3. ssl certs
-- 4. swarm cluster
-- 6. compose file
-- 5. ssl cert as secrets
+- docker machine
+- package
+- ssl certs
+- swarm cluster
+- compose file
+- ssl cert as secrets
