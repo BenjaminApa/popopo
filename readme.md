@@ -10,3 +10,4 @@ Let's build something !
 - swarm cluster
 - compose file
 - ssl cert as secrets
+- nginx in compose file
