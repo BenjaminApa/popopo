@@ -12,7 +12,7 @@ docker-machine version
 
 docker-machine create \
     --driver digitalocean \
-    --digitalocean-access-token $POLITAIK_DIGITALOCEAN_TOKEN \
+    --digitalocean-access-token $POLYTECH_DIGITALOCEAN_TOKEN \
     --digitalocean-private-networking \
     --digitalocean-image="ubuntu-16-04-x64" \
     --digitalocean-region="fra1" \
