@@ -4,12 +4,12 @@ https://github.com/tsl0922/ttyd
 
 ```bash
 docker run \
- -it \
- --rm \
- -p 7682:7681 \
- -v /var/run/docker.sock:/var/run/docker.sock:ro \
- --entrypoint="" \
- tsl0922/ttyd ttyd -c polytech:tuningforever
+    -it \
+    --rm \
+    -p 7682:7681 \
+    -v /var/run/docker.sock:/var/run/docker.sock:ro \
+    --entrypoint="" \
+    tsl0922/ttyd ttyd -c polytech:tuningforever bash
 ```
 
 # ttyd + Alpine Linux
@@ -19,9 +19,9 @@ docker run \
     -it \
     --rm \
     -p 7682:7681 \
-    -v /var/run/docker.sock:/var/run/docker.sock:ro  \
+    -v /var/run/docker.sock:/var/run/docker.sock:ro \
     --entrypoint="" \
-    tsl0922/ttyd:alpine ttyd -c polytech:tuningforever
+    tsl0922/ttyd:alpine ttyd -c polytech:tuningforever bash
 ```
 
 https://alpinelinux.org/
