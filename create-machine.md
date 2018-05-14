@@ -1,6 +1,6 @@
 # docker machine
 
-example script
+buy machine :
 
 ```bash
 #! /bin/bash
@@ -18,10 +18,37 @@ docker-machine create \
     --digitalocean-private-networking \
     --digitalocean-image="ubuntu-16-04-x64" \
     --digitalocean-region="fra1" \
-    --digitalocean-size "2gb" \
+    --digitalocean-size "1gb" \
     $1
 ```
 
 ```bash
 eval $(docker-machine env <machine-name>)
+```
+
+----------
+
+add commnent above each command to describe what it does.
+
+```shell
+# 
+docker-machine env test1
+
+# 
+eval $(docker-machine env test1)
+
+#
+docker-machine ip test1
+
+#
+ls -la $HOME/.docker/machine
+
+#
+ls -la $HOME/.docker/machine/machines/test1
+
+#
+docker-machine ssh test1
+
+#
+ssh -i $HOME/.docker/machine/machines/test1/id_rsa $(docker-machine ip test1)
 ```
