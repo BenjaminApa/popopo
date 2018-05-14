@@ -8,8 +8,21 @@ docker run \
     --rm \
     -p 7682:7681 \
     -v /var/run/docker.sock:/var/run/docker.sock:ro \
+    -v /usr/bin/docker:/usr/bin/docker \
+    -v /polytech:/polytech \
+    -v /.docker/:/root/.docker \
     --entrypoint="" \
     tsl0922/ttyd ttyd -c polytech:tuningforever bash
+```
+
+### misc setup notes
+
+```bash
+wget https://github.com/docker/machine/releases/download/v0.14.0/docker-machine-Linux-x86_64
+chmod +x docker-machine-Linux-x86_64
+alias dm='/docker-machine-Linux-x86_64'
+open http://$(docker-machine ip test1):7682
+apt-get update && apt-get install -y libltdl7
 ```
 
 # ttyd + Alpine Linux
